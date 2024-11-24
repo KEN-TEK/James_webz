@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>James Webb Space Telescope</title>
+</head>
+<body>
+    <header>
+      <div class="navigation bar">
+         <div class="logo">
+            <img src="images/logo.jpeg" alt="James Webb Space Telescope Logo">
+        </div>
+        
+       <div class="navbar">
+          <ul><a href="index.html">Home</a>
+          <a href="missions.html">missions</a>
+          <div class="dropdown">
+              <button class="dropbtn">
+                  Categories
+              </button>
+              <div class="dropdown-content">
+                  <a href="about.html">About JWST</a>
+                  <a href="discoveries.html">discoveries</a>
+              </div>
+          </div> </ul>
+      </div>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <video src="videos/video1.mp4" poster="images/logo.jpeg" width="400" height="300" preload controls loop>
+                <p>Your browser does not support HTML5 video.</p>
+            </video>
+        </section>
+
+        <section class="interactive-game">
+            <h2>Would you like to play a space game?</h2>
+            <div class="game"><a href="">PLAY GAME</a></div>
+        </section>
+
+        <hr>
+
+        <section class="about-jwst">
+            <h2>About the James Webb Space Telescope</h2>
+            <p>In the vast expanse of space, beyond the reaches of our solar system, lies a universe of untold wonders. The James Webb Space Telescope (JWST) is humanity's most ambitious and powerful space observatory, designed to unveil the secrets of the cosmos.</p>
+            <p>On December 25, 2021, the James Webb Telescope was launched, aiming to explore our origins and the existence of life elsewhere.</p>
+            <div class="video1">
+                <a href="JWST_Launch_Video.html">Watch the JWST Launch Video</a>
+            </div>
+        </section>
+
+        <section class="missions">
+            <h3>JWST Missions</h3>
+            <p>The James Webb Space Telescope was launched to explore the origins of life on Earth and to search for signs of life beyond our planet. It studies the atmospheres of planets and moons in our solar system and beyond, investigating the evolution of galaxies throughout their life cycles.</p>
+        </section>
+        <div class="container">
+          <h2>Ask Me About the James Webb Space Telescope</h2>
+          <input type="text" id="questionInput" placeholder="Type your question here...">
+          <button id="askButton">Ask</button>
+          <p id="answerOutput"></p>
+      </div>
+      <script src="script.js"></script>
+
+        <section class="discoveries">
+            <h3><a href="discoveries.html">Discoveries of the James Webb Telescope</a></h3>
+        </section>
+
+        <section class="space-facts">
+            <h2>Did You Know?</h2>
+            <ul>
+                <li>The universe is about 13.8 billion years old.</li>
+                <li>A day on Venus is longer than a year on Venus.</li>
+                <li>There are more stars in the universe than grains of sand on all the Earth's beaches.</li>
+                <li>One million Earths could fit inside the sun.</li>
+                <li>The nearest galaxy, Andromeda, is about 2.537 million light-years away from Earth.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 James Webb Space Telescope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

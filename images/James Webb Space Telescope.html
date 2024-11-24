@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/HOME%20PAGE.html#about -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./James Webb Space Telescope_files/styles.css">
+    <title>James Webb Space Telescope</title>
+</head>
+<body>
+    <header>
+      <div class="navigation bar">
+         <div class="logo">
+            <img src="./James Webb Space Telescope_files/logo.jpeg" alt="James Webb Space Telescope Logo">
+        </div>
+        <div class="navbar">
+          <ul><a href="http://127.0.0.1:5500/HOME%20PAGE.html#home">Home</a>
+          <a href="http://127.0.0.1:5500/HOME%20PAGE.html#about">missions</a>
+          <div class="dropdown">
+              <button class="dropbtn">
+                  Categories
+              </button>
+              <div class="dropdown-content">
+                  <a href="http://127.0.0.1:5500/HOME%20PAGE.html#service1">About JWST</a>
+                  <a href="http://127.0.0.1:5500/missions.html">Missions</a>
+                  <a href="http://127.0.0.1:5500/HOME%20PAGE.html#service3">discoveries </a>
+                  <a href="http://127.0.0.1:5500/HOME%20PAGE.html#service4"></a>
+              </div>
+          </div> </ul>
+          <a href="http://127.0.0.1:5500/HOME%20PAGE.html#contact">Contact</a>
+      </div>
+    </div></header>
+
+    <main>
+        <section class="video-section">
+            <video src="videos/video1.mp4" poster="images/logo.jpeg" width="400" height="300" preload="" controls="" loop="">
+                <p>Your browser does not support HTML5 video.</p>
+            </video>
+        </section>
+
+        <section class="interactive-game">
+            <h2>Would you like to play a space game?</h2>
+            <div class="game"><a href="http://127.0.0.1:5500/HOME%20PAGE.html">PLAY GAME</a></div>
+        </section>
+
+        <hr>
+
+        <section class="about-jwst">
+            <h2>About the James Webb Space Telescope</h2>
+            <p>In the vast expanse of space, beyond the reaches of our solar system, lies a universe of untold wonders. The James Webb Space Telescope (JWST) is humanity's most ambitious and powerful space observatory, designed to unveil the secrets of the cosmos.</p>
+            <p>On December 25, 2021, the James Webb Telescope was launched, aiming to explore our origins and the existence of life elsewhere.</p>
+            <div class="video1">
+                <a href="http://127.0.0.1:5500/JWST_Launch_Video.html">Watch the JWST Launch Video</a>
+            </div>
+        </section>
+
+        <section class="missions">
+            <h3>JWST Missions</h3>
+            <p>The James Webb Space Telescope was launched to explore the origins of life on Earth and to search for signs of life beyond our planet. It studies the atmospheres of planets and moons in our solar system and beyond, investigating the evolution of galaxies throughout their life cycles.</p>
+        </section>
+        <div class="container">
+          <h1>Ask About the James Webb Space Telescope</h1>
+          <input type="text" id="questionInput" placeholder="Type your question here...">
+          <button id="askButton">Ask</button>
+          <p id="answerOutput"></p>
+      </div>
+      <script src="./James Webb Space Telescope_files/script.js.download"></script>
+
+        <section class="discoveries">
+            <h3><a href="http://127.0.0.1:5500/discoveries.html">Discoveries of the James Webb Telescope</a></h3>
+        </section>
+
+        <section class="space-facts">
+            <h2>Did You Know?</h2>
+            <ul>
+                <li>The universe is about 13.8 billion years old.</li>
+                <li>A day on Venus is longer than a year on Venus.</li>
+                <li>There are more stars in the universe than grains of sand on all the Earth's beaches.</li>
+                <li>One million Earths could fit inside the sun.</li>
+                <li>The nearest galaxy, Andromeda, is about 2.537 million light-years away from Earth.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 James Webb Space Telescope. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
